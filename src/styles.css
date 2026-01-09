@@ -61,10 +61,20 @@ header a {
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
 }
 
 .grid {
   display: grid;
+
+  grid-gap: 60px;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid--column {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
@@ -77,8 +87,46 @@ footer {
     url(/images/background.jpg);
   background-position: cover;
   background-repeat: no-repeat;
-  padding: 100px 0;
 }
+
+main {
+  background-color: white;
+  color: black;
+}
+main h2 {
+  color: #272044;
+  opacity: 0.3;
+  letter-spacing: 5px;
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+main h3 {
+  color: #272044;
+  margin: 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+}
+
+main p {
+  font-style: normal;
+  color: #272044;
+  opacity: 0.7;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.grid-img {
+  max-width: 450px;
+  width: 100%;
+}
+
 footer h3 {
   font-size: 20px;
   line-height: 1.5;
@@ -89,7 +137,6 @@ footer p {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
-  margin-right: 20px;
 }
 
 footer ul {
@@ -119,5 +166,18 @@ footer a {
   }
   header h3 {
     font-size: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px;
+  }
+
+  .grid-img {
+    max-width: 100%;
   }
 }
