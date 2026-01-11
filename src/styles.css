@@ -59,9 +59,9 @@ header a {
 }
 
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
 }
 
 .grid {
@@ -76,6 +76,64 @@ section {
 
 .grid--column {
   grid-template-columns: 1fr 2fr 2fr;
+}
+
+.hotels {
+  background: #f8f8f8;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  background: white;
+  margin: 30px 0;
+}
+
+.card h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #272044;
+  margin: 0;
+}
+
+.card h5 {
+  font-weight: 700;
+  color: #272044;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-footer {
+  padding: 30px;
+}
+.grid-image {
+  max-width: 100%;
+  display: block;
+}
+
+.btn {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background: #462cb2;
 }
 
 footer {
@@ -178,6 +236,8 @@ footer a {
   }
 
   .grid-img {
-    max-width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    padding-left: 75px;
   }
 }
