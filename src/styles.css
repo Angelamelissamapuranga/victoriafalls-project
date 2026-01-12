@@ -95,6 +95,11 @@ section {
   margin: 30px 0;
 }
 
+.embeds {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
 .card h4 {
   font-weight: 700;
   font-size: 24px;
@@ -119,7 +124,7 @@ section {
   padding: 30px;
 }
 .grid-image {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 
@@ -185,6 +190,11 @@ main p {
   width: 100%;
 }
 
+..grid-image {
+  max-width: 450px;
+  width: 100%;
+}
+
 footer h3 {
   font-size: 20px;
   line-height: 1.5;
@@ -240,4 +250,16 @@ footer a {
     margin: 0 auto;
     padding-left: 75px;
   }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embeds {
+    aspect-ratio: 16/9;
+  }
+}
+
+.card-header.grid {
+  grid-gap: 0;
 }
